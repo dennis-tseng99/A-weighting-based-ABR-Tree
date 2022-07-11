@@ -25,3 +25,6 @@ Instead of using original RB-Tree’s insertion rules, some modifications are ne
 **[AVL-Tree vs ABR-Tree]**
 AVL Tree tends to be heavier than ABR Tree due to its less balance. The following diagram-1 and 2, just a snapshot from my attached file, show that AVL-Tree is heavier(61) than ABR-Tree(60) with order=5, where diagram-1 fully meets the requirement of AVL Tree in which the BF(Balance Factor) of each node is small than 2. That is to say, we must spend more lookup time in AVL-Tree. Please also refer the attached file in which more detail, step by step of weighting comparison are depicted for AVL-Tree, RB-Tree and ABR-Tree respectively. Implicitly, the structure of ABR-Tree is actually equivalent to the combination of RB-Tree and B-Tree of any order, hence you can see there still have red and black color nodes in ABR-Tree.
 The input sequence is : 1,12,8,2,25,6,14,28,17,7,52,16,48,68
+
+**[compile]**
+gcc abr.c -o abr
