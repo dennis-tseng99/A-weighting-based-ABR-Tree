@@ -40,39 +40,8 @@ int         Count_weight(RBT_NODE *tree, int cnt);
 int main(void)
 {
     RBT_NODE    *tree=NULL,*node;
-    //int         input[] = { 1,2,3,4,5,6,7,8,9,10 }; //order=4
-    //int         input[] = { 100,20,40,60,80,10,30,50,70,90,45 }; //order=4
     int         input[] = { 1,12,8,2,25,6,14,28,17,7,52,16,48,68,3,26,29,53,55,45 }; //order=5
-    //int         input[] = { 3,7,9,23,45,1,5,14,25,24,13,11,8,19,4,31,35,56 }; //order=5
-    //int         input[] = { 3,6,8,9,10,13,15,16,18,20,26,27 }; //,28,31,32,33,35,36,
-                            //37,43,45,46,47,48,49,50,53,59,60,65,75,76,77,78,79 }; //order=6
     int         i;
-    
-    /*
-    node = root = CREATE_NODE(2);
-    node->color = BLACK;
-    
-    node->left = CREATE_NODE(1);
-    node->left->color = BLACK;
-    node->right = CREATE_NODE(4);
-    node->right->color = RED;
-    
-    node = node->right;
-    node->left = CREATE_NODE(3);
-    node->left->color = BLACK;
-    node->right = CREATE_NODE(6);
-    node->right->color = RED;
-    
-    node = node->right;
-    node->left = CREATE_NODE(5);
-    node->left->color = BLACK;
-    node->right = CREATE_NODE(7);
-    node->right->color = BLACK;
-    
-    node = Find_inorder_immed_successor(root->right);
-    printf("imm suc : %d\n",node->data);
-    exit(0);
-    */
     
     for(i=0; i<sizeof(input)/sizeof(int); i++) {
         printf("\ninput:%d\n",input[i]);
