@@ -83,14 +83,14 @@ RBT_NODE *Insert_BSTree(RBT_NODE *tree, int data)
                 mid = Find_inorder_immed_successor(gp->right);
                 Amortised_promote(gp,mid);
                 gp = mid;
-                printf("Amortise prompt right:\n");
+                printf("Amortise promote right:\n");
                 Print_RBTree(root);
             }
             else if (lw>rw && (lw-rw)>=2) {
                 mid = Find_inorder_immed_predecessor(gp->left);
                 Amortised_promote(gp,mid);
                 gp = mid;
-                printf("Amortise prompt left:\n");
+                printf("Amortise promote left:\n");
                 Print_RBTree(root);
             }
             
